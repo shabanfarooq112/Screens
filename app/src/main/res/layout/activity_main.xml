@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_CI"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/ic_baseline_camera_24"
+        ></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_CI"
+        android:textSize="25sp"
+        android:text="Welcome to Go Tap"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"></TextView>
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview1"
+        android:textSize="16sp"
+        android:text="Instantly share anything"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"></TextView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview2"
+        android:layout_centerHorizontal="true"
+        android:text="Set up your Go Tap"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15dp"
+        android:layout_marginTop="35dp"
+        android:textAllCaps="false"
+        android:background="@drawable/black_button"
+        android:textColor="@color/white"
+        ></Button>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:layout_centerHorizontal="true"
+        android:text="Buy a Go Tap"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:background="@drawable/white_button"
+        android:textColor="@color/black"
+        ></Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have Go Tap? "
+            android:textSize="17sp"
+
+            ></TextView>
+        <TextView
+            android:id="@+id/sign_in_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:text="Sign in"
+            ></TextView>
+    </LinearLayout>
+
+</RelativeLayout>

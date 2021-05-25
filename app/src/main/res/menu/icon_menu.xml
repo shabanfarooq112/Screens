@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/drawer_home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"
+        ></item>
+    <item
+        android:id="@+id/drawer_activate"
+        android:title="activate"
+        android:icon="@drawable/ic_baseline_local_activity_24"
+        ></item>
+
+    <item
+        android:id="@+id/read_go_tap_icon_menu"
+        android:title="Read Go Tap"
+        android:icon="@drawable/ic_baseline_search_24"
+        ></item>
+    <item
+        android:id="@+id/qr_code"
+        android:title="My QR Code"
+        android:icon="@drawable/ic_baseline_qr_code_24"
+
+        ></item>
+    <item
+        android:id="@+id/buy_go_tap"
+        android:title="Buy_Go_Tap"
+        android:icon="@drawable/ic_baseline_turned_in_not_24"
+        ></item>
+    <item
+        android:id="@+id/how_to_go_tap"
+        android:title="How to Go Tap"
+        android:icon="@drawable/ic_baseline_turned_in_not_24"
+        ></item>
+    <item
+        android:id="@+id/logout"
+        android:title="Log out"
+        android:icon="@drawable/ic_baseline_logout_24"
+        ></item>
+</menu>

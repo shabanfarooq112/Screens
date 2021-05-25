@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/member_list_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/user"
+        ></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="nabel56578"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/member_list_image"></TextView>
+
+    <TextView
+        android:id="@+id/date_item"
+        android:layout_below="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:text="2021-04-24 10:49:27"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/member_list_image"></TextView>
+
+    <TextView
+        android:id="@+id/member_view"
+        android:layout_below="@+id/date_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:text="View: 0"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/member_list_image"></TextView>
+
+
+
+</RelativeLayout>

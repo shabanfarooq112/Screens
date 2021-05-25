@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnectDisconnectActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_CI"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/user"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/usernameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_CI"
+                android:layout_centerHorizontal="true"
+                android:text="tod"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+                android:id="@+id/checked"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_below="@+id/image_CI"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/usernameTV"
+                android:src="@drawable/checked"></ImageView>
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checked"
+                android:layout_centerHorizontal="true"
+                android:text="TodiKaroli"
+                android:textSize="16dp"></TextView>
+
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Think different"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:id="@+id/textview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview2"
+                android:layout_centerHorizontal="true"
+                android:text="Life is short, Build a bussiness"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview3"
+                android:layout_centerHorizontal="true"
+                android:text="Enterpreneur Create Enterpreneur"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:id="@+id/textview5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview4"
+                android:layout_centerHorizontal="true"
+                android:text="C"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/textview6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Tap : 0"
+                android:textColor="@color/black"
+                android:textStyle="bold"></TextView>
+
+            <Button
+                android:id="@+id/disconnect_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textview6"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/white_button"
+                android:text="Disconnected"
+                android:textColor="@color/black"
+                android:visibility="gone"></Button>
+
+            <Button
+                android:id="@+id/connect_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/textview6"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/black_button"
+                android:text="Connect"
+                android:textColor="@color/white"></Button>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/connect_disconnect_activity_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/connect_btn"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"></androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
